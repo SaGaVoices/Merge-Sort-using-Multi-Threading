@@ -288,9 +288,9 @@ int main (int argc , char** argv)
 
 
 	// displaying unsorted array
-	//cout << "Unsorted array: \n"; 
-	//for (int i = 0; i < MAX; i++) 
-	//	cout << a[i] << " ";
+	cout << "Unsorted array: \n"; 
+	for (int i = 0; i < MAX; i++) 
+		cout << a[i] << " ";
 		
 	// Start the counting of time
 	auto start = chrono::high_resolution_clock::now(); 
@@ -311,9 +311,9 @@ int main (int argc , char** argv)
 	double time_taken = chrono::duration_cast<chrono::nanoseconds>(end - start).count(); 
 
 	// displaying sorted array 
-	//cout << "\n\nSorted array: \n"; 
-	//for (int i = 0; i < MAX; i++) 
-	//	cout << a[i] << " "; 
+	cout << "\n\nSorted array: \n"; 
+	for (int i = 0; i < MAX; i++) 
+		cout << a[i] << " "; 
 
 	// time taken by merge sort 
 	time_taken *= 1e-9;
